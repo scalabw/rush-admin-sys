@@ -111,8 +111,23 @@ $ echo "<h1>Public_html webpage</h1>" > /etc/skel/public_html/index.html
 Pour créer un site internet, nous allons prendre pour exemple le nom de domaine **intra.asr.lan**.
 
 ```sh
-W.I.P
+$ nano /etc/hosts
+127.0.0.1 	localhost
+192.168.0.2	intra.asr.lan
+$ nano /etc/apache2/sites-available/intra.asr.conf
+<VirtualHost 192.168.0.2:80>
+	DocumentRoot	/var/www/virtual1.com
+	ServerName	virtual1.com
+</VirtualHost>
+$ sudo mkdir /var/www/intra.asr.lan
+$ cd /etc/apache2/sites-available
 ```
+
+modifier le fichier de conf 
+voir https://doc.ubuntu-fr.org/tutoriel/virtualhosts_avec_apache2
+
+
+
 
 ## DNS
 
