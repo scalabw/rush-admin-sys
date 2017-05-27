@@ -119,7 +119,7 @@ $ nano /etc/apache2/sites-available/intra.asr.conf
 	DocumentRoot	/var/www/virtual1.com
 	ServerName	virtual1.com
 </VirtualHost>
-$ sudo mkdir /var/www/intra.asr.lan
+$ mkdir /var/www/intra.asr.lan
 $ cd /etc/apache2/sites-available
 ```
 
@@ -131,8 +131,8 @@ voir https://doc.ubuntu-fr.org/tutoriel/virtualhosts_avec_apache2
 
 ## DNS
 
-W.I.P
+http://www.linux-france.org/prj/edu/archinet/systeme/ch30s04.html²
 
 ## DHCP
 
-W.I.P
+https://openclassrooms.com/courses/mise-en-place-d-un-serveur-dhcp-sous-linux
